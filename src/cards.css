@@ -13,10 +13,16 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__description {
     /* display, flex-direction, justify-content, align-items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px 0;
 }
 
@@ -41,15 +47,19 @@ html {
 
 .cardGroup {
     /* display */
-  
+    display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    max-width: 710px;
+    min-width: 320px;
   }
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-  
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 710px;
       border: none;
       border-radius: 0;
     }
@@ -59,5 +69,8 @@ html {
     }
   
     .cardGroup__cardDescription {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
       /* flex-grow, flex-shrink, flex-basis */
     }
