@@ -6,6 +6,11 @@ html {
     background-color: #FFFFFF;
 }
 
+body {
+  width: 100%;
+    height: 100%;
+    display: flex;
+}
 .icon {color: #BCD2DA;}
 
 .card {
@@ -51,8 +56,10 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
-    max-width: 710px;
-    min-width: 320px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: calc(710px / 3);
+    margin: auto;
   }
   
     .cardGroup__card {
@@ -73,4 +80,11 @@ html {
       flex-shrink: 1;
       flex-basis: auto;
       /* flex-grow, flex-shrink, flex-basis */
+    }
+
+    @media (min-width:710px) {
+      .cardGroup {
+        flex-wrap: nowrap;
+        width: 710px;
+      }
     }
