@@ -58,7 +58,7 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     flex-wrap: wrap;
-    width: calc(710px / 3);
+    width: 320px;
     margin: auto;
   }
   
